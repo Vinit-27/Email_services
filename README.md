@@ -76,9 +76,9 @@ To send an email, make a POST request to the /send-email endpoint with the follo
     }
 
 Example using curl:
-   ```bash
+   
    curl -X POST http://localhost:3000/send-email \  
-   -H "Content-Type: application/json" \  
+   -H "Content-Type: application/json" \
    -d '{"to":"recipient@example.com","subject":"Hello","body":"This is a test email."}'
 
 ## Logging and Monitoring
