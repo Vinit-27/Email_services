@@ -75,6 +75,8 @@ To send an email, make a POST request to the /send-email endpoint with the follo
         "body": "This is a test email."
     }
 
+
+
 ## Logging and Monitoring
 
 Logs are stored in a file within the container:
@@ -88,11 +90,10 @@ You can view the logs using Docker commands:
   ```bash
   docker exec -it <container_id> cat /usr/src/app/logs/app.log
 
-
 - **Access container’s shell to view logs directly:**
 
-    ```bash
-    docker exec -it <container_id> /bin/sh
+  ```bash
+  docker exec -it <container_id> /bin/sh
 
 Then navigate to /usr/src/app/logs and view the app.log file.
 
