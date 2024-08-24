@@ -75,6 +75,17 @@ To send an email, make a POST request to the /send-email endpoint with the follo
         "body": "This is a test email."
     }
 
+on Windows Command Prompt (cmd), Use the following command to send a POST request:
+
+      curl -X POST http://localhost:3000/send-email ^
+       -H "Content-Type: application/json" ^
+       -d "{\"to\":\"recipient@example.com\",\"subject\":\"Hello\",\"body\":\"This is a test email.\"}"
+
+On Linux or macOS, Sending a POST Request with `curl`:
+
+      curl -X POST http://localhost:3000/send-email \
+       -H "Content-Type: application/json" \
+       -d '{"to":"recipient@example.com","subject":"Hello","body":"This is a test email."}'
 
 
 ## Logging and Monitoring
