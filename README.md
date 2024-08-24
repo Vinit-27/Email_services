@@ -75,12 +75,6 @@ To send an email, make a POST request to the /send-email endpoint with the follo
         "body": "This is a test email."
     }
 
-Example using curl:
-   
-   curl -X POST http://localhost:3000/send-email \  
-   -H "Content-Type: application/json" \
-   -d '{"to":"recipient@example.com","subject":"Hello","body":"This is a test email."}'
-
 ## Logging and Monitoring
 
 Logs are stored in a file within the container:
